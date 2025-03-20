@@ -1,3 +1,4 @@
+#Dashboard.py
 import tkinter as tk
 from tkinter import ttk
 import matplotlib.pyplot as plt
@@ -28,7 +29,7 @@ class DashboardFrame(ttk.Frame):
         header_frame.pack(fill=tk.X, pady=(0, 20))
         
         header_label = ttk.Label(header_frame, text="Dashboard - Situazione Bancali", 
-                               font=("Arial", 18, "bold"))
+                                font=("Arial", 18, "bold"))
         header_label.pack(side=tk.LEFT)
         
         refresh_btn = ttk.Button(header_frame, text="🔄 Aggiorna", command=self.aggiorna_dashboard)
